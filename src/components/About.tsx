@@ -27,7 +27,7 @@ function useInView(threshold = 0.1) {
 
 const FACTS = [
   { label: "Degree", value: "B.E. Electronics & Telecommunication" },
-  { label: "College", value: "Bharati Vidyapeeth, Navi Mumbai" },
+  { label: "College", value: "Bharati Vidyapeeth College of Engineering, Navi Mumbai" },
   { label: "Graduating", value: "2026" },
   { label: "Currently Into", value: "Cloud · LLMs · API Security" },
   { label: "Location", value: "Navi Mumbai, India" },
