@@ -54,8 +54,8 @@ export default function Hero() {
         {/* LEFT CONTENT */}
         <div>
 
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-6">
-            Portfolio · 2026
+          <p className="text-lg uppercase tracking-widest text-gray-200 font-bold mb-3">
+            This is me
           </p>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
