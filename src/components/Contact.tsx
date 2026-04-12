@@ -92,7 +92,7 @@ export default function Contact() {
         <div className="bg-[#0f0f0f] border border-white/10 rounded-xl p-8 mb-6 hover:border-[#a8ff78]/40 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)] transition">
 
           <p className="text-xs uppercase tracking-widest text-gray-500 mb-3">
-            Primary
+            MY EMAIL
           </p>
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
