@@ -26,7 +26,7 @@ function useInView(threshold = 0.1) {
 }
 
 const FACTS = [
-  { label: "Degree", value: "B.E. Electronics & Telecom" },
+  { label: "Degree", value: "B.E. Electronics & Telecommunication" },
   { label: "College", value: "Bharati Vidyapeeth, Navi Mumbai" },
   { label: "Graduating", value: "2026" },
   { label: "Currently Into", value: "Cloud · LLMs · API Security" },
@@ -74,7 +74,7 @@ export default function About() {
           <div className="space-y-6 text-gray-400 max-w-xl leading-relaxed text-[15px] sm:text-base">
 
             <p>
-              I'm a final-year Electronics & Telecommunications engineering
+              I'm a final-year Electronics & Telecommunication engineering
               student at <span className="text-gray-200 "> Bharati Vidyapeeth College of Engineering, Navi Mumbai.</span> I enjoy building
               scalable backend systems and modern full-stack applications.
             </p>
