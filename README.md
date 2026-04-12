@@ -2,7 +2,6 @@
 
 A modern developer portfolio built with **React**, **Vite**, and **Tailwind CSS** — showcasing projects, skills, experience, and an easy way to connect.
 
----
 
 ## Tech Stack
 
@@ -13,7 +12,7 @@ A modern developer portfolio built with **React**, **Vite**, and **Tailwind CSS*
 | Language | TypeScript |
 | Animations | Intersection Observer API |
 
----
+
 
 ## Features
 
@@ -24,7 +23,6 @@ A modern developer portfolio built with **React**, **Vite**, and **Tailwind CSS*
 - GitHub and LinkedIn integration
 - Fast static deployment
 
----
 
 ## Sections
 
@@ -34,7 +32,7 @@ A modern developer portfolio built with **React**, **Vite**, and **Tailwind CSS*
 - Experience
 - Contact
 
----
+
 
 ## Getting Started
 
@@ -67,7 +65,7 @@ npm run build
 
 ## Deployment
 
-Compatible with [Vercel](https://vercel.com), [Netlify](https://netlify.com), and [GitHub Pages](https://pages.github.com). No additional configuration required for static deployment.
+Compatible with [Vercel](https://vercel.com) & [Netlify](https://netlify.com). No additional configuration required for static deployment.
 
 ---
 
@@ -75,5 +73,5 @@ Compatible with [Vercel](https://vercel.com), [Netlify](https://netlify.com), an
 
 **Vishwas Singh**
 
-- GitHub: [@thevishwas](https://github.com/thevishwas)
+- GitHub: [@thevishwass](https://github.com/thevishwass)
 - LinkedIn: [vishwassingh15](https://linkedin.com/in/vishwassingh15)
