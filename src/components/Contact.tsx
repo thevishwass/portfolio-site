@@ -170,9 +170,9 @@ export default function Contact() {
 
         </div>
 
-        <p className="mt-14 text-sm text-gray-500">
+        {/* <p className="mt-14 text-sm text-gray-500">
           Usually respond within 24 hours.
-        </p>
+        </p> */}
 
       </div>
     </section>

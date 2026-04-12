@@ -28,32 +28,32 @@ const PROJECTS = [
     description:
       "RAG-powered chatbot that lets you query GitHub repositories in natural language using Pinecone vector search and DeepSeek LLM.",
     tags: ["React", "FastAPI", "Pinecone", "DeepSeek", "RAG"],
-    github: "https://github.com/thevishwass/ai-github-copilot",
-    live: "https://your-live-demo-link.com",
+    github: "https://github.com/thevishwass/ai-github-repo-copilot",
+    live: "https://ai-github-repo-copilot.vercel.app/",
   },
   {
     title: "Finance Dashboard Backend",
     description:
       "RESTful API for a personal finance tracker with analytics, JWT authentication and layered architecture.",
-    tags: ["FastAPI", "SQLAlchemy", "SQLite", "JWT"],
-    github: "https://github.com/thevishwass/finance-dashboard-backend",
+    tags: ["Python", "FastAPI", "SQLAlchemy", "SQLite", "JWT"],
+    github: "https://github.com/thevishwass/finance-backend",
     live: null,
   },
   {
     title: "AI Email Sender",
     description:
       "Automated email pipeline powered by Gemini API that generates contextual emails and sends them via SMTP.",
-    tags: ["Python", "Gemini API", "SMTP"],
-    github: "https://github.com/thevishwass/ai-email-sender",
+    tags: ["Python", "Fast API", "Gemini API", "Gmail SMTP"],
+    github: "https://github.com/thevishwass/AI_EmailSender",
     live: null,
   },
   {
     title: "Resume Analyzer",
     description:
       "Full-stack tool that analyzes resumes against job descriptions using LLM scoring.",
-    tags: ["Next.js", "MongoDB", "Gemini API"],
-    github: "https://github.com/thevishwass/resume-analyzer",
-    live: "https://your-live-demo-link.com",
+    tags: ["Fast API", "Next.js", "MongoDB", "Gemini API"],
+    github: "https://github.com/thevishwass/ResumeAnalyzer",
+    live: null,
   },
 ];
 
@@ -122,7 +122,7 @@ export default function Projects() {
     href={project.github}
     target="_blank"
     rel="noreferrer"
-    className="px-4 py-2 text-sm border border-white/10 rounded-md text-gray-300 hover:border-[#a8ff78] hover:text-white transition"
+    className="px-4 py-2 text-sm border border-white/100 rounded-md text-gray-300 hover:border-[#a8ff78] hover:text-white transition"
   >
     GitHub
   </a>
@@ -146,7 +146,7 @@ export default function Projects() {
         </div>
 
         {/* footer note */}
-        <p className="mt-16 text-sm text-gray-500">
+        <p className="mt-16 text-sm text-gray-300">
           More projects available on my GitHub profile.
         </p>
 

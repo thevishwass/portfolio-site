@@ -75,7 +75,7 @@ export default function About() {
 
             <p>
               I'm a final-year Electronics & Telecommunications engineering
-              student at Bharati Vidyapeeth, Navi Mumbai. I enjoy building
+              student at <span className="text-gray-200 "> Bharati Vidyapeeth College of Engineering, Navi Mumbai.</span> I enjoy building
               scalable backend systems and modern full-stack applications.
             </p>
 
@@ -90,8 +90,8 @@ export default function About() {
               <span className="text-[#a8ff78] font-medium">
                 Eureka Ideathon 2024
               </span>{" "}
-              organized by IIT Bombay E-Cell, competing against teams
-              across India.
+              organized by E-Cell (IIT Bombay) in my College, competing against teams
+              across my College.
             </p>
 
           </div>

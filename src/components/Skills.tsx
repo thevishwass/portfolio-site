@@ -31,7 +31,8 @@ const SKILLS = [
   { category: "AI / ML", items: ["LangChain", "Pinecone", "Gemini API", "DeepSeek", "RAG", "Embeddings"] },
   { category: "Databases", items: ["MongoDB", "MySQL", "SQLite", "PostgreSQL"] },
   { category: "DevOps", items: ["Docker", "Git", "GitHub Actions", "Linux"] },
-  { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "C++"] },
+  { category: "Languages", items: ["Python", "TypeScript", "JavaScript", "SQL"] },
+  { category: "Learning", items: ["C++", "ML", "CI/CD", "Fine Tuning"] },
 ];
 
 export default function Skills() {
@@ -95,9 +96,9 @@ export default function Skills() {
         </div>
 
         {/* bottom note */}
-        <p className="mt-16 text-sm text-gray-500">
+        {/* <p className="mt-16 text-sm text-gray-500">
           Always learning — currently exploring cloud architecture and LLM systems.
-        </p>
+        </p> */}
 
       </div>
     </section>
