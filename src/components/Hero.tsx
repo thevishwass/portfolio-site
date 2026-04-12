@@ -54,7 +54,7 @@ export default function Hero() {
         {/* LEFT CONTENT */}
         <div>
 
-          <p className="text-lg uppercase tracking-widest text-gray-200 font-bold mb-3">
+          <p className="mt-8 text-lg uppercase tracking-widest text-gray-200 font-bold mb-3">
             This is me
           </p>
 
