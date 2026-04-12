@@ -9,12 +9,15 @@ function useInView(threshold = 0.1) {
     const el = ref.current;
     if (!el) return;
 
-    const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setInView(true);
-        obs.disconnect();
-      }
-    }, { threshold });
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          obs.disconnect();
+        }
+      },
+      { threshold }
+    );
 
     obs.observe(el);
     return () => obs.disconnect();
@@ -64,7 +67,7 @@ export default function Contact() {
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {/* subtle background glow */}
+      {/* background glow */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(168,255,120,0.05),transparent_60%)]" />
 
       <div className="max-w-7xl mx-auto relative">
@@ -94,15 +97,16 @@ export default function Contact() {
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
 
-            <h3 className="text-2xl md:text-3xl font-semibold text-white">
-              {EMAIL}
-            </h3>
+            {/* Email + copy (mobile optimized) */}
+            <div className="flex items-center gap-3 flex-wrap">
 
-            <div className="flex gap-3">
+              <h3 className="text-lg md:text-3xl font-semibold text-white break-all">
+                {EMAIL}
+              </h3>
 
               <button
                 onClick={handleCopy}
-                className={`px-4 py-2 text-xs uppercase tracking-widest border rounded-md transition ${
+                className={`px-3 py-1.5 text-[11px] uppercase tracking-widest border rounded-md transition ${
                   copied
                     ? "border-[#a8ff78] text-[#a8ff78]"
                     : "border-white/20 text-gray-300 hover:border-[#a8ff78]"
@@ -111,14 +115,15 @@ export default function Contact() {
                 {copied ? "Copied ✓" : "Copy"}
               </button>
 
-              <a
-                href={`mailto:${EMAIL}`}
-                className="px-5 py-2 text-xs uppercase tracking-widest rounded-md bg-[#a8ff78] text-black font-semibold hover:bg-white transition"
-              >
-                Send Mail →
-              </a>
-
             </div>
+
+            {/* Send Mail */}
+            <a
+              href={`mailto:${EMAIL}`}
+              className="px-5 py-2 text-xs uppercase tracking-widest rounded-md bg-[#a8ff78] text-black font-semibold hover:bg-white transition"
+            >
+              Send Mail →
+            </a>
 
           </div>
 
@@ -169,10 +174,6 @@ export default function Contact() {
           })}
 
         </div>
-
-        {/* <p className="mt-14 text-sm text-gray-500">
-          Usually respond within 24 hours.
-        </p> */}
 
       </div>
     </section>
