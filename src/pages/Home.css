@@ -10,7 +10,7 @@
 
 :root {
   --bg: #0a0a0a;
-  --bg-card: #111111;
+  --bg-card: #000000;
   --bg-card-hover: #161616;
   --border: #222222;
   --border-hover: #333333;
@@ -63,7 +63,7 @@ body {
 ───────────────────────────────────────────────────────────── */
 
 ::selection {
-  background: rgba(168,255,120,0.25);
+  background: rgba(130, 195, 95, 0.25);
 }
 
 ::-webkit-scrollbar {
@@ -107,7 +107,7 @@ a:hover {
 
 .glow {
   text-shadow:
-    0 0 6px rgba(168,255,120,0.4),
+    0 0 6px rgba(255, 233, 120, 0.4),
     0 0 14px rgba(168,255,120,0.25);
 }
 

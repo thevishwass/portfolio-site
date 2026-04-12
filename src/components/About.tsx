@@ -50,29 +50,28 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className={`relative bg-[#050505] text-white py-28 px-6 md:px-12 transition-all duration-700 ${
+      className={`relative bg-black text-white py-24 px-6 md:px-12 transition-all duration-700 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      {/* subtle radial glow */}
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(168,255,120,0.05),transparent_60%)]" />
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start relative">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-start relative">
 
-        {/* LEFT CONTENT */}
+        {/* LEFT */}
         <div>
 
-          <p className="text-sm uppercase tracking-widest text-gray-500 mb-6">
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-500 mb-6">
             About
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
             Building real
             <br />
             <span className="text-[#a8ff78]">software systems.</span>
           </h2>
 
-          <div className="space-y-6 text-gray-400 max-w-lg leading-relaxed">
+          <div className="space-y-6 text-gray-400 max-w-xl leading-relaxed text-[15px] sm:text-base">
 
             <p>
               I'm a final-year Electronics & Telecommunications engineering
@@ -91,7 +90,7 @@ export default function About() {
               <span className="text-[#a8ff78] font-medium">
                 Eureka Ideathon 2024
               </span>{" "}
-              organized by IIT Bombay E-Cell, competing against teams from
+              organized by IIT Bombay E-Cell, competing against teams
               across India.
             </p>
 
@@ -99,18 +98,18 @@ export default function About() {
 
         </div>
 
-        {/* RIGHT FACT PANEL */}
-        <div className="group bg-[#0f0f0f] border border-white/10 rounded-xl p-8 transition hover:border-[#a8ff78]/40 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
+        {/* RIGHT PANEL */}
+        <div className="bg-[#0f0f0f] border border-white/10 rounded-xl p-6 sm:p-8 transition hover:border-[#a8ff78]/40 hover:shadow-[0_10px_40px_rgba(0,0,0,0.6)]">
 
-          <div className="space-y-6">
+          <div className="space-y-5">
 
             {FACTS.map(({ label, value, href }) => (
               <div
                 key={label}
-                className="flex justify-between items-center border-b border-white/5 pb-3 last:border-none"
+                className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 border-b border-white/5 pb-3 last:border-none"
               >
 
-                <span className="text-sm text-gray-500">
+                <span className="text-xs uppercase tracking-wide text-gray-500">
                   {label}
                 </span>
 
@@ -119,12 +118,12 @@ export default function About() {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-gray-300 hover:text-[#a8ff78] transition"
+                    className="text-sm text-gray-300 hover:text-[#a8ff78] transition break-all"
                   >
                     {value}
                   </a>
                 ) : (
-                  <span className="text-sm text-gray-300">
+                  <span className="text-sm text-gray-300 break-words">
                     {value}
                   </span>
                 )}

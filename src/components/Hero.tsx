@@ -44,10 +44,10 @@ export default function Hero() {
   const typed = useTypingEffect(ROLES);
 
   return (
-    <section className="relative min-h-screen bg-[#050505] text-white flex items-center px-6 md:px-12">
+    <section className="relative min-h-screen bg-[#000000ae] text-white flex items-center px-6 md:px-12">
 
       {/* subtle radial glow */}
-      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(168,255,120,0.05),transparent_60%)]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(168,255,120,0.01),transparent_60%)]" />
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
 

@@ -41,7 +41,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className={`relative bg-[#050505] text-white py-28 px-6 md:px-12 transition-all duration-700 ${
+      className={`relative bg-[#000000] text-white py-28 px-6 md:px-12 transition-all duration-700 ${
         inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
