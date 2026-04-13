@@ -84,7 +84,7 @@ export default function Navbar() {
         {/* Hire Me Button */}
         <a
           href="mailto:thevishwass@gmail.com"
-          className="hidden md:inline-flex items-center px-5 py-2 rounded-md text-sm font-semibold text-black bg-[#a8ff78] transition-all duration-300 shadow-[0_4px_18px_rgba(168,255,120,0.35)] hover:scale-105 hover:bg-white hover:shadow-[0_8px_30px_rgba(168,255,120,0.5)]"
+          className="hidden md:inline-flex items-center px-5 py-2 rounded-md text-sm font-semibold text-black bg-[#a8ff78] transition-all duration-300 shadow-[0_4px_18px_rgba(168,255,120,0.35)] hover:bg-green hover:shadow-[0_8px_30px_rgba(168,255,120,0.5)]"
         >
           Hire Me
         </a>
