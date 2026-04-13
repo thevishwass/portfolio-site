@@ -113,17 +113,19 @@ export default function Hero() {
           <div className="relative w-[320px] md:w-[420px]">
 
             {/* glow */}
-            <div className="absolute inset-0 bg-[#a8ff78]/10 blur-3xl rounded-3xl"></div>
+            <div className="absolute inset-0 bg-[#000000] blur-2xl rounded-2xl"></div>
 
-            <div className="relative bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
+<div className="relative bg-black border border-black rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
 
-              <img
-                src="/hero.png"
-                alt="profile"
-                className="w-full h-full object-cover"
-              />
+  <img
+    src="/profile.png"
+    alt="profile"
+    draggable="false"
+    onContextMenu={(e) => e.preventDefault()}
+    className="w-full h-full object-cover opacity-80 select-none pointer-events-none"
+  />
 
-            </div>
+</div>
 
           </div>
 
