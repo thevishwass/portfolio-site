@@ -117,9 +117,16 @@ return ( <section className="relative min-h-[85vh] md:min-h-screen bg-[#000000ae
           <video
   autoPlay
   muted
+  loop
   playsInline
-  onEnded={(e) => e.currentTarget.play()}
-  className="w-[140%] h-[140%] object-cover scale-110 opacity-90"
+  preload="auto"
+  controls={false}
+  onEnded={(e) => {
+    const vid = e.currentTarget;
+    vid.currentTime = 0;
+    vid.play();
+  }}
+  className="w-[140%] h-[140%] object-cover scale-110 opacity-90 pointer-events-none"
 >
   <source src="/ClipOfHacking.mp4" type="video/mp4" />
 </video>
