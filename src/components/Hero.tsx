@@ -115,14 +115,14 @@ return ( <section className="relative min-h-[85vh] md:min-h-screen bg-[#000000ae
         <div className="relative rounded-2xl overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
 
           <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-[140%] h-[140%] object-cover scale-110 opacity-90"
-          >
-            <source src="/ClipOfHacking.mp4" type="video/mp4" />
-          </video>
+  autoPlay
+  muted
+  playsInline
+  onEnded={(e) => e.currentTarget.play()}
+  className="w-[140%] h-[140%] object-cover scale-110 opacity-90"
+>
+  <source src="/ClipOfHacking.mp4" type="video/mp4" />
+</video>
 
           {/* horizontal oval vignette */}
           <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.65)_70%,black_100%)]"></div>
